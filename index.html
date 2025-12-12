@@ -2,15 +2,109 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LiveLink Sports</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
-        h1 { color: #007acc; }
+        /* Reset & base */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+          font-family: 'Roboto', sans-serif;
+          background: linear-gradient(135deg, #1a1a1a, #0a0a0a);
+          color: #fff;
+          min-height: 100vh;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          padding: 20px;
+        }
+
+        /* Logo / Title */
+        h1 {
+          font-size: 3rem;
+          background: linear-gradient(90deg, #00c6ff, #0072ff);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+          from { text-shadow: 0 0 10px #00c6ff, 0 0 20px #0072ff; }
+          to { text-shadow: 0 0 20px #00c6ff, 0 0 40px #0072ff; }
+        }
+
+        /* Subtitle */
+        p.subtitle {
+          font-size: 1.3rem;
+          margin-top: 15px;
+          color: #aaa;
+          animation: fadeIn 3s ease-in;
+        }
+
+        @keyframes fadeIn {
+          from { opacity: 0; transform: translateY(20px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Button */
+        .button {
+          display: inline-block;
+          margin-top: 40px;
+          padding: 15px 30px;
+          font-size: 1rem;
+          font-weight: bold;
+          text-decoration: none;
+          color: #fff;
+          border: 2px solid #00c6ff;
+          border-radius: 50px;
+          background: transparent;
+          transition: all 0.3s ease;
+        }
+
+        .button:hover {
+          background: #00c6ff;
+          color: #000;
+          box-shadow: 0 0 20px #00c6ff;
+          transform: scale(1.05);
+        }
+
+        /* Footer / app-ads.txt link */
+        footer {
+          position: absolute;
+          bottom: 20px;
+          font-size: 0.9rem;
+          color: #777;
+        }
+
+        footer a {
+          color: #00c6ff;
+          text-decoration: none;
+        }
+
+        footer a:hover {
+          text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media(max-width: 600px) {
+          h1 { font-size: 2.2rem; }
+          p.subtitle { font-size: 1.1rem; }
+          .button { padding: 12px 24px; }
+        }
     </style>
 </head>
 <body>
-<h1>Welcome to LiveLink Sports</h1>
-<p>This is the official LiveLink Sports site.</p>
-<p><a href="/app-ads.txt">View app-ads.txt</a></p>
+
+<h1>LiveLink Sports</h1>
+<p class="subtitle">Your live link into all things sports — scores, updates, and more, in real time.</p>
+
+<a href="/app-ads.txt" class="button">View app-ads.txt</a>
+
+<footer>
+    &copy; 2025 LiveLink Sports. <a href="/app-ads.txt">app-ads.txt</a>
+</footer>
+
 </body>
 </html>
