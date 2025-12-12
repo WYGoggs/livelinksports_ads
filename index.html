@@ -10,7 +10,7 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
           font-family: 'Roboto', sans-serif;
-          background: linear-gradient(135deg, #1a1a1a, #0a0a0a);
+          background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
           color: #fff;
           min-height: 100vh;
           display: flex;
@@ -24,15 +24,15 @@
         /* Logo / Title */
         h1 {
           font-size: 3rem;
-          background: linear-gradient(90deg, #00c6ff, #0072ff);
+          background: linear-gradient(90deg, #00ff7f, #00b347);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           animation: glow 2s ease-in-out infinite alternate;
         }
 
         @keyframes glow {
-          from { text-shadow: 0 0 10px #00c6ff, 0 0 20px #0072ff; }
-          to { text-shadow: 0 0 20px #00c6ff, 0 0 40px #0072ff; }
+          from { text-shadow: 0 0 10px #00ff7f, 0 0 20px #00b347; }
+          to { text-shadow: 0 0 20px #00ff7f, 0 0 40px #00b347; }
         }
 
         /* Subtitle */
@@ -48,7 +48,7 @@
           to { opacity: 1; transform: translateY(0); }
         }
 
-        /* Button */
+        /* Buttons */
         .button {
           display: inline-block;
           margin-top: 40px;
@@ -57,16 +57,16 @@
           font-weight: bold;
           text-decoration: none;
           color: #fff;
-          border: 2px solid #00c6ff;
+          border: 2px solid #00ff7f;
           border-radius: 50px;
           background: transparent;
           transition: all 0.3s ease;
         }
 
         .button:hover {
-          background: #00c6ff;
+          background: #00ff7f;
           color: #000;
-          box-shadow: 0 0 20px #00c6ff;
+          box-shadow: 0 0 20px #00ff7f;
           transform: scale(1.05);
         }
 
@@ -79,7 +79,7 @@
         }
 
         footer a {
-          color: #00c6ff;
+          color: #00ff7f;
           text-decoration: none;
         }
 
@@ -100,7 +100,7 @@
 <h1>LiveLink Sports</h1>
 <p class="subtitle">Your live link into all things sports — scores, updates, and more, in real time.</p>
 
-<a href="/app-ads.txt" class="button">View app-ads.txt</a>
+<a href="https://linktr.ee/livelinksports" class="button" target="_blank">Download the App</a>
 
 <footer>
     &copy; 2025 LiveLink Sports. <a href="/app-ads.txt">app-ads.txt</a>
